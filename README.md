@@ -14,11 +14,11 @@ The build lives in the `gh-pages` branch, which must not be deleted.
 
 ## FAQ
 
-**Where is the content of the site located?**
+:question: **Where is the content of the site located?**
 
 Static pages are found in the `_pages` directory. Blog posts and announcements work a little differently and they must be configured first.
 
-**How do I add a new page?**
+:question: **How do I add a new page?**
 
 Create a new markdown file under `_pages`. To add it to the navbar, set the following frontmatter:
 
@@ -36,7 +36,7 @@ Content...
 
 If you want to tweak the order of links in the nav bar, set `nav_order: x` where `x` is a number. Make sure to adjust other pages as well.
 
-**How do I add an image to a page?**
+:question: **How do I add an image to a page?**
 
 First add the file under `assets/img/file.png`. Then, in your markdown content you write:
 
@@ -44,7 +44,7 @@ First add the file under `assets/img/file.png`. Then, in your markdown content y
 ![My figure caption](/assets/img/file.png)
 ```
 
-**How do I add the table of contents to a page?**
+:question: **How do I add the table of contents to a page?**
 
 Add the following to the page's frontmatter:
 
@@ -55,16 +55,16 @@ toc:
 
 Make sure to preserve the indentation. You can also set `sidebar: right`.
 
-**How do I change contact information and other site settings?**
+:question: **How do I change contact information and other site settings?**
 
 Look through the file `_config.yml`. Most properties should be self-explanatory.
 
-**How do I set a custom domain?**
+:question: **How do I set a custom domain?**
 
 You need to change repository settings as well as modifying the `CNAME` file.
 Please see the FAQ of [al-folio](https://github.com/alshedivat/al-folio).
 
-**What are page layouts?**
+:question: **What are page layouts?**
 
 The layouts are the templates found in `_layouts`. Currently we have:
 
@@ -73,7 +73,7 @@ The layouts are the templates found in `_layouts`. Currently we have:
 3. `layout: default` - Base template used by other templates. You probably won't need this.
 4. `layout: none` - Raw, unstyled content. You probably won't need this.
 
-**I need something else. Where can I learn more?**
+:question: **I need something else. Where can I learn more?**
 
 See the readme of [al-folio](https://github.com/alshedivat/al-folio).
 Also look for general resources on Jekyll.
