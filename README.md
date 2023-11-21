@@ -36,6 +36,14 @@ Content...
 
 If you want to tweak the order of links in the nav bar, set `nav_order: x` where `x` is a number. Make sure to adjust other pages as well.
 
+**How do I add an image to a page?**
+
+First add the file under `assets/img/file.png`. Then, in your markdown content you write:
+
+```
+![My figure caption](/assets/img/file.png)
+```
+
 **How do I add the table of contents to a page?**
 
 Add the following to the page's frontmatter:
