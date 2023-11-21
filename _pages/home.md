@@ -17,7 +17,7 @@ Our flagship tool is [**SynDiffix**](/syndiffix), a python package for generatin
 * **one to two orders of magnitude** more accurate than other open-source tools, and
 * **five to ten times** more accurate than the best commercial products. 
 
-SynDiffix is particularly well suited to **descriptive analytics use cases**. Nevertheless, it is works for ML use cases as well.
+SynDiffix is particularly well suited to **descriptive analytics use cases**. Nevertheless, it works for ML use cases as well.
 
 The current release is the first release. We are planning many new features. If you would like to request features, or need help or advice, you may contact us at hello@open-diffix.org. You may also post bug reports or feature requests as GitHub issues at [github.com/diffix/syndiffix](https://github.com/diffix/syndiffix).
 
