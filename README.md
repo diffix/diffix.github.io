@@ -38,7 +38,7 @@ If you want to tweak the order of links in the nav bar, set `nav_order: x` where
 
 :question: **How do I add an image to a page?**
 
-First add the file under `assets/img/file.png`. Then, in your markdown content you write:
+First add the file under `assets/img/file.png`. Then, in your markdown content write:
 
 ```
 ![My figure caption](/assets/img/file.png)
@@ -54,6 +54,16 @@ toc:
 ```
 
 Make sure to preserve the indentation. You can also set `sidebar: right`.
+
+:question: **How do I add a notebook to a page?**
+
+First add the file under `assets/jupyter/my-notebook.ipynb`. Then, in your markdown content write:
+
+```
+{% jupyter_notebook "/assets/jupyter/my-notebook.ipynb" %}
+```
+
+This will display the notebook's content inside your page.
 
 :question: **How do I change contact information and other site settings?**
 
