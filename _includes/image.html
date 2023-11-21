@@ -1,0 +1,9 @@
+{% assign src = include.src | default:"" %}
+{% assign alt = include.alt | default:"" %}
+{% assign max_width = include.max_width | default:"" %}
+
+{% if src != "" %}
+  <img src="{{ src }}" alt="{{ alt }}" class="img-fluid" {% if max_width != "" %}style="max-width: {{ max_width }};"{% endif %}>
+{% else %}
+  <p class="error">Error: Missing 'src' attribute in include 'image.html'.</p>
+{% endif %}

@@ -41,7 +41,13 @@ If you want to tweak the order of links in the nav bar, set `nav_order: x` where
 First add the file under `assets/img/file.png`. Then, in your markdown content write:
 
 ```
-![My figure caption](/assets/img/file.png)
+{% include image.html src="/assets/img/file.png" %}
+```
+
+You may add the optional attributes `alt` and/or `max_width`:
+
+```
+{% include image.html src="/assets/img/file.png" alt="My image label" max_width="500px" %}
 ```
 
 :question: **How do I add the table of contents to a page?**
