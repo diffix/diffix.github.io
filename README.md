@@ -2,7 +2,7 @@
 
 Content is located under `_pages`.
 
-To run a local development server:
+To start a local development server on http://localhost:8080, run:
 
 ```
 docker compose up
