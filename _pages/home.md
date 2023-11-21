@@ -14,8 +14,8 @@ Open Diffix is an open source project developing tools for anonymizing structure
 ### SynDiffix
 
 Our flagship tool is [**SynDiffix**](/syndiffix), a Python package for generating statistically accurate and strongly anonymous synthetic data from structured data. **SynDiffix** is:
-* **one to two orders of magnitude** more accurate than other open-source tools, and
-* **five to ten times** more accurate than the best commercial products. 
+* **one to two orders of magnitude more accurate** than other open-source tools, and
+* **five to ten times more accurate** than the best commercial products. 
 
 SynDiffix is particularly well suited to **descriptive analytics use cases**. Nevertheless, it works for ML use cases as well.
 
