@@ -33,7 +33,9 @@ While **SynDiffix** serves both use cases, it is especially good at descriptive 
 
 ## Usage
 
-Obtaining this accuracy improvement, however, requires a different usage style compared to other products. The intended usage style of other products is "*one size fits all*": a single synthetic dataset serves all use cases. By contrast, with **SynDiffix**, a different *tailored* synthetic dataset should be produced for each use case.
+Obtaining this accuracy improvement, however, requires a different usage style compared to other products. The intended usage style of other products is "*one size fits all*": a single monolithic synthetic dataset serves all use cases. It's like expecting a vehicle to be good at city maneuverability, highway cruising, and hauling lumber.
+
+By contrast, with **SynDiffix**, a different *tailored* synthetic dataset can be produced for each use case: like having a Smart car for the city, a Mercedes S-class for the highway, and a Ford F-150 for hauling stuff.
 
 {% include image.html src="/assets/img/usage.png" alt="SynDiffix usage style" max_width="550px" %}
 
