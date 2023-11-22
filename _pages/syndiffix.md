@@ -35,7 +35,7 @@ While **SynDiffix** serves both use cases, it is especially good at descriptive 
 
 Obtaining this accuracy improvement, however, requires a different usage style compared to other products. The intended usage style of other products is "*one size fits all*": a single synthetic dataset serves all use cases. By contrast, with **SynDiffix**, a different *tailored* synthetic dataset should be produced for each use case.
 
-<img src="/assets/img/usage.png" width="400" height="400">
+{% include image.html src="/assets/img/usage.png" alt="SynDiffix usage style" max_width="450px" %}
 
 For instance, suppose the analyst is interested in a heatmap with columns C and E. With other synthetic data products, one would synthesize the complete table, and then make the heatmap with only columns C and E. With **SynDiffix**, one would create a synthetic table consisting of only those two columns and obtain much better results.
 
@@ -45,7 +45,7 @@ For instance, suppose the analyst is interested in a heatmap with columns C and 
 
 Here are three scatter plots showing the synthetic and real points for a 2-column dataset for **SynDiffix**, the commercial product MostlyAI, and the open-source implementation of CTGAN by SDV.
 
-<img src="/assets/img/scatter.png" width="550" height="200">
+{% include image.html src="/assets/img/scatter.png" alt="SynDiffix accuracy" max_width="600px" %}
 
 The black dots are the original data and the blue dots are the synthetic overlaid on the original data. SynDiffix is far more accurate. More examples can be found in the [arXiv paper](https://arxiv.org/abs/2311.09628).
 
@@ -53,6 +53,6 @@ The black dots are the original data and the blue dots are the synthetic overlai
 
 We measured the anonymity of **SynDiffix** and a number of other products using the [Anonymeter](https://github.com/statice/anonymeter) tool developed by Statice. The following figure shows the results of measuring the effectiveness of 100s of attacks over multiple different tables (again, see the [arXiv paper](https://arxiv.org/abs/2311.09628) for details). Any score below 0.5 can be regarded as having strong anonymity, and scores below 0.2 are very strong. The "noAnon" plot measures attacks against the original data, and is there for calibration.
 
-<img src="/assets/img/privacy.png" width="400" height="200">
+{% include image.html src="/assets/img/privacy.png" alt="SynDiffix privacy" max_width="400px" %}
 
-As these results show, **SynDiffix** and most of the other products have very strong anonymization.
+As these results show, **SynDiffix** and most of the other products have very strong anonymization with respect to the attack used by Anonymeter.
