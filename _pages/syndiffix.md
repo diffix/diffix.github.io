@@ -35,7 +35,7 @@ While **SynDiffix** serves both use cases, it is especially good at descriptive 
 
 Obtaining this accuracy improvement, however, requires a different usage style compared to other products. The intended usage style of other products is "*one size fits all*": a single synthetic dataset serves all use cases. By contrast, with **SynDiffix**, a different *tailored* synthetic dataset should be produced for each use case.
 
-{% include image.html src="/assets/img/usage.png" alt="SynDiffix usage style" max_width="450px" %}
+{% include image.html src="/assets/img/usage.png" alt="SynDiffix usage style" max_width="550px" %}
 
 For instance, suppose the analyst is interested in a heatmap with columns C and E. With other synthetic data products, one would synthesize the complete table, and then make the heatmap with only columns C and E. With **SynDiffix**, one would create a synthetic table consisting of only those two columns and obtain much better results.
 
