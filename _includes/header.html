@@ -6,13 +6,8 @@
     <div class="container">
       {% if page.permalink != '/' -%}
       <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-        {%- if site.title == "blank" -%}
-        {%- if site.brand_name -%}
-        <span class="font-weight-bold">{{- site.brand_name -}}&nbsp;</span>
-        {%- endif -%}
-        {%- else -%}
-        {{- site.title -}}
-        {%- endif -%}
+        <img src="/assets/img/logo-flat.png" alt="Open Diffix Logo" width="26" height="26" style="margin-top: -2px; margin-right: 1px;">
+        {% include wordmark.html %}
       </a>
       {%- elsif site.enable_navbar_social -%}
       <!-- Social Icons -->
