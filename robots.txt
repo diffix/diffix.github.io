@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://diffix.github.io/sitemap.xml
+Sitemap: https://www.open-diffix.org/sitemap.xml
