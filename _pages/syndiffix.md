@@ -14,7 +14,7 @@ nav: true
 
 A complete description of **SynDiffix**, including its operation, performance, and anonymity, can be found on [arXiv](https://arxiv.org/abs/2311.09628). See [github.com/diffix/syndiffix](https://github.com/diffix/syndiffix).
 
-{% include image.html href="/syndiffix-mostlyai-ctgan" src="/assets/img/compare-link.png" alt="SynDiffix usage style" max_width="800px" %}
+{% include image.html href="/syndiffix-mostlyai-ctgan" src="/assets/img/compare-link.png" alt="SynDiffix usage style" max_width="500px" %}
 
 Programming with **SynDiffix** can be as easy as:
 
