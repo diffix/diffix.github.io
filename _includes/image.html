@@ -1,12 +1,21 @@
 {% assign src = include.src | default:"" %}
 {% assign alt = include.alt | default:"" %}
 {% assign max_width = include.max_width | default:"" %}
+{% assign href = include.href | default:"" %}
 
 {% if src != "" %}
-  <img src="{{ src }}" 
-       alt="{{ alt }}"
-       class="img-fluid mx-auto d-block"
-       {% if max_width != "" %}style="max-width: {{ max_width }}; width: 100%;"{% endif %}>
+{% if href != "" %}
+<a href="{{ href }}" 
+  class="mx-auto d-block"
+  {% if max_width != "" %}style="max-width: {{ max_width }}; width: 100%;"{% endif %}>
+  <img src="{{ src }}" alt="{{ alt }}" class="img-fluid">
+</a>
 {% else %}
-  <p class="error">Error: Missing 'src' attribute in include 'image.html'.</p>
+<img src="{{ src }}" 
+  alt="{{ alt }}"
+  class="img-fluid mx-auto d-block"
+  {% if max_width != "" %}style="max-width: {{ max_width }}; width: 100%;"{% endif %}>
+{% endif %}
+{% else %}
+<p class="error">Error: Missing 'src' attribute in include 'image.html'.</p>
 {% endif %}
