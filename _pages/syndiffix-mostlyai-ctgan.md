@@ -10,6 +10,8 @@ Compared to other commercial and open-source data synthesis tools, the strength 
 For this comparison, we use the [Czech banking dataset](https://data.world/lpetrocelli/czech-financial-dataset-real-anonymized-transactions). See [here](#how-the-synthetic-data-was-created) for a description of how we generated the synthetic datasets. Note in particular that we used the tools as they were designed to be used: multiple synthetic datasets for SynDiffix, and single datasets for Mostly AI and CTGAN. See
 [here](#how-the-comparison-is-and-isnt-fair) for a discussion of how this comparison is and isn't fair.
 
+The code for some of the following examples can be found [here](https://github.com/diffix/syndiffix/blob/main/docs/time-series.ipynb).
+
 ## Average account balance by type of credit card
 
 892 of the 4500 bank accounts have credit cards. There are three classes of card, 'junior', 'classic', and 'gold'. Here we ask the question, "Does the average account balance differ based on the credit card class?"
