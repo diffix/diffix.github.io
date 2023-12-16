@@ -14,7 +14,7 @@ For this comparison, we use the [Czech banking dataset](https://data.world/lpetr
 
 892 of the 4500 bank accounts have credit cards. There are three classes of card, 'junior', 'classic', and 'gold'. Here we ask the question, "Does the average account balance differ based on the credit card class?"
 
-The following graphs are percentile boxplots (100th, 75th, 50th, 25th, and 0th percentiles, plus outliers) of the average account balance for each account with a credit card. The two plots show the same data, but grouped by credit card type on the left, and by synthesis method on the right.
+The following graphs are percentile boxplots (100th, 75th, 50th, 25th, and 0th percentiles, plus outliers) of the average account balance for each account with a credit card. The two plots show the same data, but grouped by synthesis method on the left, and by card type on the right.
 
 {% include image.html src="/assets/img/trans_account_card_clients.avg_balance.card_type.png" alt="SynDiffix usage style" max_width="650px" %}
 
