@@ -30,7 +30,7 @@ The high accuracy of SynDiffix makes it a good choice for descriptive analytics 
 
 SynDiffix is ideal for releasing accurate data statistics while strongly protecting anonymity. It is far easier to use than K-anonymity and Differential Privacy, and far more accurate than other synthetic data methods for descriptive analytics.
 
-SynDiffix can also be used for Machine Learning use case (building models, extending datasets, etc.). It's ML models are on a par with other synthetic data methods, but it is somewhat less easy to use for ML applications.
+SynDiffix can also be used for Machine Learning use cases (building models, extending datasets, etc.). It's ML models are on a par with other synthetic data methods, but it is somewhat less easy to use for ML applications.
 
 ## Usage
 
