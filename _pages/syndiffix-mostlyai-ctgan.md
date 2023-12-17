@@ -114,5 +114,5 @@ Synthetic data products are marketed as one-size-fits-all: the promise is that a
 
 ### The privacy of synthetic data products erodes with multiple syntheses
 
-Unlike SynDiffix, the anonymity of other synthetic data products weakens with each data synthesis. As such, a comparison of multiple SynDiffix synthetic datasets against a single Mostly AI or CTGAN synthetic dataset is fair from a privacy perspective.
+Unlike SynDiffix, the anonymity of other synthetic data products weakens with each data synthesis, at least in theory. As such, a comparison of multiple SynDiffix synthetic datasets against a single Mostly AI or CTGAN synthetic dataset is fair from a privacy perspective. Whether generating a large number of synthetic datasets with other products results in real risks in practice is unknown, though it does seem unlikely that generating a relatively small number of datasets leads to practical risks.
 
