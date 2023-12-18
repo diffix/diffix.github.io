@@ -9,7 +9,7 @@ social: true  # includes social icons at the bottom of the page
 
 ## Open source tools for anonymizing structured data
 
-Open Diffix is an open source project developing tools for anonymizing structured data.
+Open Diffix is an open source project developing tools for anonymizing structured data. The underlying technology for Open Diffix tools was developed by the [Max Planck Institute for Software Systems](https://mpi-sws.org) in partnership with the former [Aircloak GmbH](aircloak.com).
 
 ### SynDiffix
 
