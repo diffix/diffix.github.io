@@ -13,7 +13,7 @@ Open Diffix is an open source project developing tools for anonymizing structure
 
 ### SynDiffix
 
-Our flagship tool is [**SynDiffix**](/syndiffix), a Python package for generating statistically accurate and strongly anonymous synthetic data from structured data. **SynDiffix** is:
+Our flagship tool is [SynDiffix](/syndiffix), a Python package for generating statistically accurate and strongly anonymous synthetic data from structured data. SynDiffix is:
 * **one to two orders of magnitude more accurate** than other open-source tools, and
 * **five to ten times more accurate** than the best commercial products. 
 
@@ -23,12 +23,12 @@ The current release is the first release. We are planning many new features. If 
 
 ### pg_diffix
 
-**pg_diffix** is a PostgreSQL extension that gives aggregate anonymized answers to SQL queries. Advantages over **SynDiffix** include:
+**pg_diffix** is a PostgreSQL extension that gives aggregate anonymized answers to SQL queries. Advantages over SynDiffix include:
 
 * Faster and more scalable
 * Supports untrusted users
 * Supports back-end data for applications
 
-**pg_diffix** only returns aggregate answers (column values and associated counts) to a very limited subset of SQL. It is far less flexible than **SynDiffix**. See [github.com/diffix/pg_diffix](https://github.com/diffix/pg_diffix).
+**pg_diffix** only returns aggregate answers (column values and associated counts) to a very limited subset of SQL. It is far less flexible than SynDiffix. See [github.com/diffix/pg_diffix](https://github.com/diffix/pg_diffix).
 
 Development on **pg_diffix** is currently paused. If you are interested in a project using **pg_diffix**, please contact us at [hello@open-diffix.org](mailto:hello@open-diffix.org).
