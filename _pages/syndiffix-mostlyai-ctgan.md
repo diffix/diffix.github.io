@@ -12,6 +12,22 @@ For this comparison, we use the [Czech banking dataset](https://data.world/lpetr
 
 The code for some of the following examples can be found [here](https://github.com/diffix/syndiffix/blob/main/docs/time-series.ipynb).
 
+## Average account balance by type of credit card
+
+892 of the 4500 bank accounts have credit cards. There are three classes of card, 'junior', 'classic', and 'gold'. Here we ask the question, "Does the average account balance differ based on the credit card class?"
+
+The following graphs are percentile boxplots (100th, 75th, 50th, 25th, and 0th percentiles, plus outliers) of the average account balance for each account with a credit card. The two plots show the same data, but grouped by synthesis method on the left, and by card type on the right.
+
+{% include image.html src="/assets/img/trans_account_card_clients.avg_balance.card_type.png" alt="SynDiffix usage style" max_width="650px" %}
+
+The SynDiffix synthetic data was produced by first computing the average balance per account from the original data to produce a two-column table consisting of the `avg_balance` and the `card_type`, with one row per account (i.e. not time-series data). This two-column table was then synthesized.
+
+From the original data, we see that indeed gold credit card holders have higher average account balances than classic card holders, which in turn are a little higher than junior card holders. The data for SynDiffix is very close to the original data, and accurately shows the same trend. The high and low values are pulled in a little bit, which is due to SynDiffix' tendency to hide outlier values.
+
+Mostly AI also shows the same trend, and the median account balances track the original data very closely. In contrast to SynDiffix, the high and low account balances tend to be spread out.
+
+While CTGAN shows the median account balance to be slightly higher for gold card holders, overall it does not capture the trend. Its high and low values are extreme, in some cases showing negative balances where none should exist.
+
 ## Distribution of deposit and withdrawal amounts
 
 There are five types of transaction operations. One of them represents deposits (VKLAD), while the other four represent different types of withdrawals (at least as near as we can tell from the Czech translations).
@@ -28,15 +44,15 @@ For withdrawals, Mostly AI tracks the original data very well until the lower ri
 
 ## Total transaction volume per month
 
-The following plot shows the total transaction volume (sum of all transaction amounts) for each month. The two smaller plots zoom in on the two boxed areas.
+The following plot shows the total transaction volume (sum of all transaction amounts) for each month.
 
-{% include image.html src="/assets/img/trans_account_card_clients.amount.month.grid.png" alt="SynDiffix usage style" max_width="600px" %}
+{% include image.html src="/assets/img/trans_account_card_clients.amount.month.png" alt="SynDiffix usage style" max_width="400px" %}
 
 The SynDiffix data was produced by rounding the transaction date to the month, and then producing a two-column table with `month` and `amount`. This table was then synthesized.
 
-Once again, the SynDiffix line tracks the original data almost perfectly. The zoom-in plots show a very slight difference from the original data.
+Once again, the SynDiffix line tracks the original data almost perfectly.
 
-Mostly AI tracks the original data quite well until the last year, where it diverges substantially. The two zoom-in boxes show that even where Mostly AI tracks well, it is still substantially less accurate than SynDiffix. The CTGAN line manages to show the correct upward trend, but otherwise is quite inaccurate.
+While both the Mostly AI and CTGAN transactions have the right increasing trend, both are quite inaccurate.
 
 ## Distribution of maximum balance for all accounts
 
